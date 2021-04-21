@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, render_to_response, render
+from django.shortcuts import render, HttpResponse, render
 from django.template import loader
 
 
@@ -18,3 +18,4 @@ def login (request):
 
 def signup (request):
     return render(request, 'signup.html')
+
