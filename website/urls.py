@@ -17,12 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
-
+from users import views as v
 
 urlpatterns = [
     path('', views.home, name='home'),
     path('login/', views.login, name='login'),
-    path('signup/', views.signup, name='signup'),
+    path('register/', v.register, name='signup'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+
+
     
 ]
 
