@@ -24,3 +24,6 @@ def about (request):
 
 def contact (request):
     return render(request, 'contact.html')
+
+def logout (request):
+    return render(request, 'logout.html')
